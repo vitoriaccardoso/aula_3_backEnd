@@ -22,7 +22,16 @@
     }
     const - Permite criar um espaço em memoria para um conteudo que não sera alterado, podendo ser no escopo local ou 
     global
+
+
+
+    Operadores logicos
+    E         AND        &&
+    OU        OR         ||
+    Negação   NOT         !
     */
+
+
 
         
 
@@ -56,7 +65,9 @@
                 var numero4 = numero4;
 
 
-                if(numero1 == '')
+                if(numero1 == '' || numero2 == '' || numero3 == '' || numero4 == '')
+                console.log('ERRO: todas as notas dever ser preeenchidas')
+                entradaDados.close();
         
 
             var resultado = Number (numero1) + Number(numero2) + Number (numero3) + Number(numero4);
